@@ -715,4 +715,18 @@
     <string name="qr_code_not_found">QR Code not found in the selected image</string>
     <string name="not_granted_permission">The activity you are trying to start requires a permission which is not granted.</string>
     <string name="basemap_source_unavailable">Sorry, %s basemaps are not available on this device.  Please choose another basemap in General Settings &gt; Maps.</string>
+
+
+    <!--
+         **************************************************************************************
+         * TAKEN FROM GeoODK
+         **************************************************************************************
+    -->
+
+    <string name="map_view_button">Map View</string>
+    <string name="map_view_title">Map</string>
+    <string name="mbtiles_not_found">No .mbtiles file found in the directory \'%s\'.</string>
+    <string name="gps_enable_button">Enable GPS</string>
+    <string name="select_offline_layer">Select Offline Layer</string>
+
 </resources>

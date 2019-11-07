@@ -63,6 +63,14 @@
                     android:orientation="vertical">
 
                     <Button
+                        android:id="@+id/map_view"
+                        style="@style/Widget.Collect.Button.Big"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:text="@string/map_view_button" />
+
+                    <Button
                         android:id="@+id/enter_data"
                         style="@style/Widget.Collect.Button.Big"
                         android:layout_width="match_parent"

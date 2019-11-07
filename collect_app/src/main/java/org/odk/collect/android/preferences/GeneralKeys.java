@@ -61,6 +61,7 @@ public final class GeneralKeys {
     public static final String KEY_SPLASH_PATH              = "splashPath";
 
     // map_preferences.xml
+    public static final String KEY_MAP_ONLINE               = "map_online";
     public static final String CATEGORY_BASEMAP             = "category_basemap";
     public static final String KEY_BASEMAP_SOURCE           = "basemap_source";
     public static final String BASEMAP_SOURCE_GOOGLE        = "google";

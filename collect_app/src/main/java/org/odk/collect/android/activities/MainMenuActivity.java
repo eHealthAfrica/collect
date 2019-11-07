@@ -128,6 +128,19 @@ public class MainMenuActivity extends CollectAbstractActivity {
             }
         });
 
+        // map view button. expects a result.
+        Button mapViewButton = findViewById(R.id.map_view);
+        mapViewButton.setText(getString(R.string.map_view_button));
+        mapViewButton.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (Collect.allowClick(getClass().getName())) {
+                    Intent i = new Intent(getApplicationContext(), GeoODKMainMapActivity.class);
+                    startActivity(i);
+                }
+            }
+        });
+
         // review data button. expects a result.
         reviewDataButton = findViewById(R.id.review_data);
         reviewDataButton.setText(getString(R.string.review_data_button));

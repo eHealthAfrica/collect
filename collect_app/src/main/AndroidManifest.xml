@@ -289,5 +289,17 @@ the specific language governing permissions and limitations under the License.
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <!--
+             **************************************************************************************
+             * TAKEN FROM GeoODK
+             **************************************************************************************
+        -->
+
+        <activity
+            android:name=".activities.GeoODKMainMapActivity"
+            android:configChanges="orientation"
+            android:label="@string/map_view_title" />
+
     </application>
 </manifest>
