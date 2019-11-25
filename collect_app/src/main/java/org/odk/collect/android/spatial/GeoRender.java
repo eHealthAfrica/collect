@@ -41,8 +41,8 @@ import javax.xml.parsers.ParserConfigurationException;
 
 public class GeoRender {
 
-    private static final String GEOSHAPE = "geoshape";
     private static final String GEOPOINT = "geopoint";
+    private static final String GEOSHAPE = "geoshape";
     private static final String GEOTRACE = "geotrace";
 
     private Context context;
@@ -162,8 +162,11 @@ public class GeoRender {
                     if ((value != null) && (!value.equals(""))) {
                         if (type.equals(GEOPOINT)) {
                             addMarker(geoFeature, value, tagName);
+                            // In this version draw only the first geo point
+                            return;
                         } else {
-                            addPolyline(geoFeature, value, tagName);
+                            // In this version do not draw geo shapes/traces
+                            // addPolyline(geoFeature, value, tagName);
                         }
                     }
                 }
